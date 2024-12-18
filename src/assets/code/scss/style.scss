@@ -1,0 +1,117 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  width: 90%;
+}
+
+h3 {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+}
+section {
+  &.body {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .card {
+    border: solid 1px #999;
+    border-radius: 8px;
+    width: 250px;
+    padding: 10px;
+  }
+
+  input[type="text"] {
+    height: 25px;
+    width: 200px;
+    margin-bottom: 10px;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0px;
+
+    th,
+    td {
+      height: 30;
+    }
+    th {
+      &.id {
+        width: 120px;
+        text-align: center;
+        padding: 8px;
+      }
+      &.name {
+        padding: 8px;
+        text-align: left;
+      }
+
+      &.company {
+        width: 150px;
+        padding: 8px;
+      }
+
+      &.cost {
+        width: 100px;
+        padding: 8px;
+      }
+    }
+  }
+
+  nav {
+    margin-bottom: 10px;
+
+    ul {
+      padding-left: 0;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+
+      > li {
+        border: 1px solid #ccc;
+        display: inline-block;
+        padding: 8px;
+        text-align: center;
+      }
+    }
+  }
+  a {
+    color: black;
+    text-decoration: none;
+    &:active,
+    &:hover,
+    &:focus {
+    }
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  tr {
+    &.first {
+      background-color: #777;
+      color: white;
+    }
+
+    &.first {
+      background-color: #777;
+      color: white;
+    }
+
+    &:hover {
+      background-color: yellow;
+    }
+  }
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+
+footer {
+  margin-top: 20px;
+}
